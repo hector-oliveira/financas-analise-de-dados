@@ -56,14 +56,14 @@ O dataset original está disponível no Kaggle:
 
 ## 🛠️ O que foi Feito
 
-Até o momento, o projeto encontra-se na fase de planejamento e definição do escopo analítico, com foco em:
+🎨 Limpeza e Preparação dos Dados
 
-- Compreensão do contexto de negócio representado pelo dataset
-- Definição das principais **perguntas de negócio** a serem respondidas
-- Estruturação do repositório e organização dos diretórios
-- Planejamento das análises a serem desenvolvidas em **SQL**, **Python** e **ferramentas de BI**
+- Padronização dos nomes das colunas para o formato `snake_case`
+- Conversão adequada dos tipos de dados (datas, numéricos e inteiros)
+- Tratamento e padronização de colunas categóricas, incluindo remoção de espaços em branco e tratamento de valores nulos
+- Manutenção dos valores financeiros originais, sem aplicação de regras de negócio nesta fase
+- Salvamento de um **novo dataset tratado** no formato `.xlsx`, que servirá como base para análises em SQL e ferramentas de BI
 
-As etapas de análise, visualização e extração de insights serão desenvolvidas progressivamente.
 
 ---
 
