@@ -43,7 +43,6 @@ O dataset original está disponível no Kaggle:
   - Qual país ou produto é mais eficiente operacionalmente?
 
 - **Sazonalidade e Tendência**
-  
   - Existem meses com vendas **consistentemente maiores**?
   - O padrão muda de um ano para outro?
   - O **lucro acompanha o crescimento das vendas** ou não?
@@ -63,7 +62,6 @@ O dataset original está disponível no Kaggle:
 - Tratamento e padronização de colunas categóricas, incluindo remoção de espaços em branco e tratamento de valores nulos
 - Manutenção dos valores financeiros originais, sem aplicação de regras de negócio nesta fase
 - Salvamento de um **novo dataset tratado** no formato `.xlsx`, que servirá como base para análises em SQL e ferramentas de BI
-
 
 ---
 
@@ -140,5 +138,3 @@ As conclusões finais serão elaboradas após a execução completa das análise
 Analista de Dados Júnior
 
 ---
-
-
