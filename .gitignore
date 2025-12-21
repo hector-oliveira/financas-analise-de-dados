@@ -1,2 +1,6 @@
 # Configurações de palavras
 .vscode/settings.json
+
+# Arquivos de datasets
+*.csv
+*.xlsx
