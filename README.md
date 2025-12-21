@@ -14,38 +14,38 @@ O dataset original está disponível no Kaggle:
 ## 🎯 Problema de Negócio
 
 - **Desempenho Financeiro**
-  - Qual foi o **faturamento total (Sales)** por ano e por mês?
-  - Qual o **lucro total e margem de lucro** por período?
-  - Houve crescimento ou queda de vendas e lucro ao longo do tempo?
-  - Quais meses apresentam **melhor e pior performance financeira**?
+  - [x] Qual foi o **faturamento total (Sales)** por ano e por mês?
+  - [x] Qual o **lucro total e margem de lucro** por período?
+  - [ ] Houve crescimento ou queda de vendas e lucro ao longo do tempo?
+  - [ ] Quais meses apresentam **melhor e pior performance financeira**?
 
 - **Performance por País e Segmento**
-  - Quais países geram **mais receita e lucro**?
-  - Existe país com **alto volume de vendas, mas baixo lucro**?
-  - Qual segmento de clientes é mais rentável?
-  - O governo compra mais, mas dá mais ou menos lucro que o setor privado?
+  - [ ] Quais países geram **mais receita e lucro**?
+  - [ ] Existe país com **alto volume de vendas, mas baixo lucro**?
+  - [ ] Qual segmento de clientes é mais rentável?
+  - [ ] O governo compra mais, mas dá mais ou menos lucro que o setor privado?
 
 - **Análise de Produtos**
-  - Quais produtos geram **mais lucro absoluto**?
-  - Quais produtos têm **baixa margem**, mesmo vendendo bastante?
-  - Existe produto que deveria ser descontinuado?
-  - Qual o impacto do preço de fabricação no lucro final?
+  - [ ] Quais produtos geram **mais lucro absoluto**?
+  - [ ] Quais produtos têm **baixa margem**, mesmo vendendo bastante?
+  - [ ] Existe produto que deveria ser descontinuado?
+  - [ ] Qual o impacto do preço de fabricação no lucro final?
 
 - **Impacto e descontos**
-  - Descontos altos realmente aumentam o volume vendido?
-  - Qual faixa de desconto gera **maior lucro**, não apenas vendas?
-  - Existe desconto que **prejudica a margem**?
-  - O impacto do desconto muda por país ou segmento?
+  - [ ] Descontos altos realmente aumentam o volume vendido?
+  - [ ] Qual faixa de desconto gera **maior lucro**, não apenas vendas?
+  - [ ] Existe desconto que **prejudica a margem**?
+  - [ ] O impacto do desconto muda por país ou segmento?
 
 - **Eficiência Operacional**
-  - Qual a relação entre **COGS e Sales** por produto?
-  - Onde o custo está corroendo a margem?
-  - Qual país ou produto é mais eficiente operacionalmente?
+  - [ ] Qual a relação entre **COGS e Sales** por produto?
+  - [ ] Onde o custo está corroendo a margem?
+  - [ ] Qual país ou produto é mais eficiente operacionalmente?
 
 - **Sazonalidade e Tendência**
-  - Existem meses com vendas **consistentemente maiores**?
-  - O padrão muda de um ano para outro?
-  - O **lucro acompanha o crescimento das vendas** ou não?
+  - [ ] Existem meses com vendas **consistentemente maiores**?
+  - [ ] O padrão muda de um ano para outro?
+  - [ ] O **lucro acompanha o crescimento das vendas** ou não?
 
 ---
 
