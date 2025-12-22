@@ -32,10 +32,10 @@ O dataset original está disponível no Kaggle:
   - [x] Qual o impacto do preço de fabricação no lucro final?
 
 - **Impacto e descontos**
-  - [ ] Descontos altos realmente aumentam o volume vendido?
-  - [ ] Qual faixa de desconto gera **maior lucro**, não apenas vendas?
-  - [ ] Existe desconto que **prejudica a margem**?
-  - [ ] O impacto do desconto muda por país ou segmento?
+  - [x] Descontos altos realmente aumentam o volume vendido?
+  - [x] Qual faixa de desconto gera **maior lucro**, não apenas vendas?
+  - [x] Existe desconto que **prejudica a margem**?
+  - [x] O impacto do desconto muda por país ou segmento?
 
 - **Eficiência Operacional**
   - [ ] Qual a relação entre **COGS e Sales** por produto?
