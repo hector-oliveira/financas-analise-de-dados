@@ -43,9 +43,9 @@ O dataset original está disponível no Kaggle:
   - [x] Qual país ou produto é mais eficiente operacionalmente?
 
 - **Sazonalidade e Tendência**
-  - [ ] Existem meses com vendas **consistentemente maiores**?
-  - [ ] O padrão muda de um ano para outro?
-  - [ ] O **lucro acompanha o crescimento das vendas** ou não?
+  - [x] Existem meses com vendas **consistentemente maiores**?
+  - [x] O padrão muda de um ano para outro?
+  - [x] O **lucro acompanha o crescimento das vendas** ou não?
 
 ---
 ## 🗂️ Estrutura do Projeto/Repositório
