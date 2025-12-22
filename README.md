@@ -1,140 +1,189 @@
-# 📊💰 Análise de Dados de Financiamento
+# 📊💰 Análise Financeira e Comercial — Dados, SQL Server e BI
 
 ## 👀 Visão Geral do Projeto
 
-Este projeto consiste em uma **análise financeira e comercial** baseada em um conjunto de dados que simula as vendas de uma empresa multinacional, contemplando diferentes **produtos, países, segmentos de clientes e políticas de desconto**.
+Este projeto apresenta uma **análise financeira e comercial completa**, baseada em um conjunto de dados que simula as vendas de uma empresa multinacional atuando em diferentes **países, produtos, segmentos de clientes e políticas de desconto**.
 
-O objetivo é aplicar conceitos de **análise de dados, estatística descritiva** e **inteligência de negócios**, transformando dados brutos em **insights estratégicos** que apoiem a tomada de decisão.
+O trabalho foi desenvolvido com foco em **boas práticas de Análise de Dados**, simulando um cenário real de mercado, no qual os dados passam por um fluxo estruturado de:
 
-O dataset original está disponível no Kaggle:  
+- Limpeza e preparação
+- Análise Exploratória de Dados (EDA)
+- Consolidação e validação de métricas em **SQL Server**
+- Preparação para consumo em **Business Intelligence**
+
+O dataset original utilizado está disponível no Kaggle:  
 [*Financial Sample*](https://www.kaggle.com/datasets/nickolashirata/financial-sample)
 
 ---
 
-## 🎯 Problema de Negócio
+## 🎯 Objetivo do Projeto
 
-- **Desempenho Financeiro**
-  - [x] Qual foi o **faturamento total (Sales)** por ano e por mês?
-  - [x] Qual o **lucro total e margem de lucro** por período?
-  - [x] Houve crescimento ou queda de vendas e lucro ao longo do tempo?
-  - [x] Quais meses apresentam **melhor e pior performance financeira**?
+O objetivo principal é demonstrar, de forma prática, como **dados brutos podem ser transformados em insights estratégicos**, apoiando a tomada de decisão em um contexto corporativo.
 
-- **Performance por País e Segmento**
-  - [x] Quais países geram **mais receita e lucro**?
-  - [x] Existe país com **alto volume de vendas, mas baixo lucro**?
-  - [x] Qual segmento de clientes é mais rentável?
-  - [x] O governo compra mais, mas dá mais ou menos lucro que o setor privado?
+O projeto busca responder perguntas relacionadas a:
+- Rentabilidade do negócio
+- Crescimento e sazonalidade
+- Eficiência operacional
+- Impacto de descontos
+- Performance por país, produto e segmento
 
-- **Análise de Produtos**
-  - [x] Quais produtos geram **mais lucro absoluto**?
-  - [x] Quais produtos têm **baixa margem**, mesmo vendendo bastante?
-  - [x] Existe produto que deveria ser descontinuado?
-  - [x] Qual o impacto do preço de fabricação no lucro final?
-
-- **Impacto e descontos**
-  - [x] Descontos altos realmente aumentam o volume vendido?
-  - [x] Qual faixa de desconto gera **maior lucro**, não apenas vendas?
-  - [x] Existe desconto que **prejudica a margem**?
-  - [x] O impacto do desconto muda por país ou segmento?
-
-- **Eficiência Operacional**
-  - [x] Qual a relação entre **COGS e Sales** por produto?
-  - [x] Onde o custo está corroendo a margem?
-  - [x] Qual país ou produto é mais eficiente operacionalmente?
-
-- **Sazonalidade e Tendência**
-  - [x] Existem meses com vendas **consistentemente maiores**?
-  - [x] O padrão muda de um ano para outro?
-  - [x] O **lucro acompanha o crescimento das vendas** ou não?
-
----
-## 🗂️ Estrutura do Projeto/Repositório
-
-A estrutura está parcialmente definida; somente ao término do projeto será apresentada a estrutura completa para uma visão macro.
-
----
-## 🛠️ O que foi Feito
-
-🎨 Limpeza e Preparação dos Dados
-
-- Padronização dos nomes das colunas para o formato `snake_case`
-- Conversão adequada dos tipos de dados (datas, numéricos e inteiros)
-- Tratamento e padronização de colunas categóricas, incluindo remoção de espaços em branco e tratamento de valores nulos
-- Manutenção dos valores financeiros originais, sem aplicação de regras de negócio nesta fase
-- Salvamento de um **novo dataset tratado** no formato `.xlsx`, que servirá como base para análises em SQL e ferramentas de BI
+Além disso, o projeto evidencia a separação clara entre:
+- **Exploração dos dados (Python / EDA)**
+- **Regras de negócio e métricas oficiais (SQL Server)**
 
 ---
 
-## 🔎 Principais Descoberta
+## 🧠 Problema de Negócio
 
-🚧 Em desenvolvimento
+As análises desenvolvidas ao longo do projeto buscam responder às seguintes questões estratégicas:
 
-As principais descobertas deste projeto serão documentadas após a realização das análises exploratórias, consultas SQL e construção dos dashboards, abordando aspectos como:
+### 📈 Desempenho Financeiro
+- Qual foi o faturamento total por ano e por mês?
+- Como o lucro e a margem evoluem ao longo do tempo?
+- Houve crescimento ou queda de vendas e lucro?
+- O crescimento de vendas foi acompanhado pelo crescimento do lucro?
 
-- Desempenho financeiro ao longo do tempo
-- Produtos, países e segmentos mais rentáveis
-- Impacto dos descontos sobre vendas e lucro
-- Eficiência operacional e margens de lucro
+### 🌍 Performance por País e Segmento
+- Quais países geram mais receita e lucro?
+- Existe país com alto volume de vendas, mas baixa rentabilidade?
+- Qual segmento de clientes é mais rentável?
+- O segmento governamental compra mais e gera mais ou menos lucro que o setor privado?
+
+### 📦 Análise de Produtos
+- Quais produtos geram mais lucro absoluto?
+- Quais produtos têm baixa margem, mesmo vendendo bastante?
+- Existe produto que merece revisão estratégica ou possível descontinuação?
+- Qual o impacto do custo de fabricação no lucro final?
+
+### 💸 Impacto dos Descontos
+- Descontos altos realmente aumentam o volume vendido?
+- Qual faixa de desconto gera maior lucro, e não apenas mais vendas?
+- Existe nível de desconto que prejudica a margem?
+- O impacto do desconto muda por país ou segmento?
+
+### ⚙️ Eficiência Operacional
+- Qual a relação entre COGS e Sales por produto?
+- Onde os custos estão corroendo a margem?
+- Qual país ou produto é mais eficiente operacionalmente?
+
+### 📆 Sazonalidade e Tendência
+- Existem meses com vendas consistentemente maiores?
+- O padrão sazonal muda de um ano para outro?
+- O lucro acompanha o crescimento das vendas ou cresce em ritmo diferente?
+
+---
+
+## 🛠️ Etapas do Projeto
+
+### 1️⃣ Limpeza e Preparação dos Dados (Python)
+
+Nesta etapa inicial, os dados foram tratados para garantir consistência e qualidade, sem aplicação de regras de negócio.
+
+Principais atividades:
+- Padronização dos nomes das colunas (`snake_case`)
+- Conversão correta dos tipos de dados
+- Tratamento de colunas categóricas
+- Remoção de inconsistências e espaços em branco
+- Preservação dos valores financeiros originais
+- Geração de um dataset tratado para uso posterior em SQL Server
+
+📌 **Importante:**  
+Os valores financeiros não foram alterados nesta etapa. Toda validação e regra de negócio é aplicada posteriormente no SQL.
+
+---
+
+### 2️⃣ Análise Exploratória de Dados (EDA)
+
+A Análise Exploratória foi realizada em Python, utilizando Jupyter Notebooks, com foco em:
+
+- Entendimento do comportamento financeiro do negócio
+- Identificação de padrões, tendências e outliers
+- Avaliação de eficiência, rentabilidade e sazonalidade
+- Geração de insights claros e acionáveis
+
+Cada notebook contém:
+- Objetivo da análise
+- Perguntas de negócio respondidas
+- Blocos de código bem comentados
+- Uma seção final de **insights consolidados em Markdown**
+
+---
+
+### 3️⃣ SQL Server — Camada Analítica
+
+Após a EDA, o projeto avança para o **SQL Server**, simulando um ambiente corporativo de Analytics / BI.
+
+Nesta etapa, o SQL é utilizado como **fonte oficial da verdade**, onde:
+
+- Os dados tratados são carregados sem regras de negócio
+- Métricas são recalculadas e validadas
+- Regras de negócio são aplicadas de forma explícita
+- Views analíticas são criadas para consumo em BI
+
+Principais análises desenvolvidas em SQL:
+- Validação de vendas, lucro, COGS e margens
+- Análises temporais (Year over Year, Month over Month)
+- Rankings por país, produto e segmento
+- Análise do impacto de descontos
+- Avaliação de eficiência operacional
+
+Técnicas utilizadas:
+- CTEs
+- Window Functions (`LAG`, `OVER`, `PARTITION BY`)
+- Queries documentadas e padronizadas
+
+---
+
+### 4️⃣ Business Intelligence (Próxima Etapa)
+
+As views criadas no SQL Server servirão como base para o desenvolvimento de dashboards, com foco em:
+
+- Visão financeira executiva
+- Performance por país, produto e segmento
+- Impacto de descontos e eficiência operacional
+- Evolução temporal das métricas principais
 
 ---
 
 ## 💡 Impacto no Negócio
 
-Este projeto busca simular como uma análise de dados pode:
+Este projeto demonstra como a análise de dados pode:
 
-- Apoiar decisões estratégicas sobre **precificação e descontos**
+- Apoiar decisões estratégicas de **precificação e descontos**
 - Identificar **oportunidades de crescimento** por país ou segmento
 - Sinalizar produtos ou mercados com **baixa rentabilidade**
-- Melhorar a compreensão da **eficiência operacional** da empresa
+- Melhorar a compreensão da **eficiência operacional**
+- Criar uma base sólida para análises em BI
 
 ---
 
 ## 🧰 Tecnologias Utilizadas
 
 | Tecnologia | Finalidade |
-|------------|------------|
-|SQL |Consultas analíticas, agregações e análise métricas financeiras|
-|Python |Transformação e padronização dos dados |
-|Pandas |Manipulação e primeiras análise de dados |
-|Matplotlib |Primeiras visualizações |
-|Jupyter Notebook |Desenvolvimento exploratório |
-|Git & Github |Versionamento e documentação do projeto |
-|CSV |Fonte de dados |
+|-----------|-----------|
+| Python | Limpeza e análise exploratória |
+| Pandas | Manipulação e agregação de dados |
+| Jupyter Notebook | Desenvolvimento exploratório |
+| SQL Server | Camada analítica e regras de negócio |
+| Git & GitHub | Versionamento e documentação |
+| Excel | Fonte de dados |
+| Power BI / Tableau | (Em desenvolvimento) |
+
 ---
 
 ## 🚀 Possíveis Extensões Futuras
 
-- Análise de sensibilidade de preços e descontos
-- Segmentação avançada de clientes
-- Automação de dashboards
-- Integração com bases de dados simuladas adicionais
-
----
-
-## 📈 Dashboard
-
-🚧 Em desenvolvimento
-
-Será desenvolvido um dashboard interativo com foco em:
-
-- Visão geral financeira
-- Análise por país, produto e segmento
-- Impacto dos descontos
-- Evolução temporal das métricas principais
-
----
-
-## ✅ Conclusões
-
-🚧 A serem definidas
-
-As conclusões finais serão elaboradas após a execução completa das análises e consolidação dos resultados obtidos.
+- Modelagem dimensional (Star Schema)
+- Análise avançada de sensibilidade de preços
+- Segmentação de clientes
+- Automatização de pipelines de dados
+- Dashboards interativos
 
 ---
 
 ## 👨‍💻 Autor
 
-[**Hector Oliveira**](https://www.linkedin.com/in/hectoroliveira-tech/)  
-Analista de Dados Júnior
+**Hector Oliveira**  
+Analista de Dados Júnior  
 
----
+🔗 [LinkedIn](https://www.linkedin.com/in/hectoroliveira-tech/)
