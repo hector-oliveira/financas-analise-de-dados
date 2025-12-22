@@ -38,9 +38,9 @@ O dataset original está disponível no Kaggle:
   - [x] O impacto do desconto muda por país ou segmento?
 
 - **Eficiência Operacional**
-  - [ ] Qual a relação entre **COGS e Sales** por produto?
-  - [ ] Onde o custo está corroendo a margem?
-  - [ ] Qual país ou produto é mais eficiente operacionalmente?
+  - [x] Qual a relação entre **COGS e Sales** por produto?
+  - [x] Onde o custo está corroendo a margem?
+  - [x] Qual país ou produto é mais eficiente operacionalmente?
 
 - **Sazonalidade e Tendência**
   - [ ] Existem meses com vendas **consistentemente maiores**?
