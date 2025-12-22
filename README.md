@@ -26,10 +26,10 @@ O dataset original está disponível no Kaggle:
   - [x] O governo compra mais, mas dá mais ou menos lucro que o setor privado?
 
 - **Análise de Produtos**
-  - [ ] Quais produtos geram **mais lucro absoluto**?
-  - [ ] Quais produtos têm **baixa margem**, mesmo vendendo bastante?
-  - [ ] Existe produto que deveria ser descontinuado?
-  - [ ] Qual o impacto do preço de fabricação no lucro final?
+  - [x] Quais produtos geram **mais lucro absoluto**?
+  - [x] Quais produtos têm **baixa margem**, mesmo vendendo bastante?
+  - [x] Existe produto que deveria ser descontinuado?
+  - [x] Qual o impacto do preço de fabricação no lucro final?
 
 - **Impacto e descontos**
   - [ ] Descontos altos realmente aumentam o volume vendido?
