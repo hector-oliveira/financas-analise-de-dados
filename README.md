@@ -16,14 +16,14 @@ O dataset original está disponível no Kaggle:
 - **Desempenho Financeiro**
   - [x] Qual foi o **faturamento total (Sales)** por ano e por mês?
   - [x] Qual o **lucro total e margem de lucro** por período?
-  - [ ] Houve crescimento ou queda de vendas e lucro ao longo do tempo?
-  - [ ] Quais meses apresentam **melhor e pior performance financeira**?
+  - [x] Houve crescimento ou queda de vendas e lucro ao longo do tempo?
+  - [x] Quais meses apresentam **melhor e pior performance financeira**?
 
 - **Performance por País e Segmento**
-  - [ ] Quais países geram **mais receita e lucro**?
-  - [ ] Existe país com **alto volume de vendas, mas baixo lucro**?
-  - [ ] Qual segmento de clientes é mais rentável?
-  - [ ] O governo compra mais, mas dá mais ou menos lucro que o setor privado?
+  - [x] Quais países geram **mais receita e lucro**?
+  - [x] Existe país com **alto volume de vendas, mas baixo lucro**?
+  - [x] Qual segmento de clientes é mais rentável?
+  - [x] O governo compra mais, mas dá mais ou menos lucro que o setor privado?
 
 - **Análise de Produtos**
   - [ ] Quais produtos geram **mais lucro absoluto**?
