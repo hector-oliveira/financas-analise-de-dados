@@ -50,7 +50,7 @@ O dataset original está disponível no Kaggle:
 ---
 
 ## 🗂️ Estrutura do Projeto/Repositório
-
+🚧 A estrutura está parcialmente definida, porém somente ao termino do projeto será colocado a estrutura do projeto para uma visão macro.
 ---
 
 ## 🛠️ O que foi Feito
