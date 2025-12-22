@@ -48,11 +48,11 @@ O dataset original está disponível no Kaggle:
   - [ ] O **lucro acompanha o crescimento das vendas** ou não?
 
 ---
-
 ## 🗂️ Estrutura do Projeto/Repositório
-🚧 A estrutura está parcialmente definida, porém somente ao termino do projeto será colocado a estrutura do projeto para uma visão macro.
----
 
+A estrutura está parcialmente definida; somente ao término do projeto será apresentada a estrutura completa para uma visão macro.
+
+---
 ## 🛠️ O que foi Feito
 
 🎨 Limpeza e Preparação dos Dados
