@@ -4,11 +4,6 @@ Análise: Evolução mensal do lucro
 Objetivo:
 Avaliar a variação do lucro mês a mês para identificar
 tendência de crescimento ou queda ao longo do tempo.
-
-Por que CTE?
-- Melhora a legibilidade da query
-- Permite separar agregação da análise de tendência
-- Facilita manutenção e reutilização
 */
 
 WITH cteMonthlyProfit AS (
