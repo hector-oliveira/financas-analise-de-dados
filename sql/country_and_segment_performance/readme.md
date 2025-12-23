@@ -29,7 +29,7 @@ Priorizar mercados estratégicos com maior geração de valor.
 ## Resultado:
 Screenshot do resultado da query, facilitando a visualização dos padrões identificados.
 
-country_by_country_financial_performance.png
+country_by_country_financial_performance
 ![country_by_country_financial_performance.png](./country_by_country_financial_performance.png)
 
 ---
