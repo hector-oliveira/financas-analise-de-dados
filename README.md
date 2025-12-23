@@ -28,8 +28,8 @@ O projeto busca responder perguntas relacionadas a:
 - Performance por país, produto e segmento
 
 Além disso, o projeto evidencia a separação clara entre:
-- **Exploração dos dados (Python / EDA)**
-- **Regras de negócio e métricas oficiais (SQL Server)**
+- **Exploração e entendimento inicial dos dados (Python / EDA)**
+- **Cálculo oficial de métricas e regras de negócio (SQL Server)**
 
 ---
 
@@ -77,7 +77,7 @@ As análises desenvolvidas ao longo do projeto buscam responder às seguintes qu
 
 ### 1️⃣ Limpeza e Preparação dos Dados (Python)
 
-Nesta etapa inicial, os dados foram tratados para garantir consistência e qualidade, sem aplicação de regras de negócio.
+Nesta etapa inicial, os dados foram tratados para garantir consistência e qualidade, **sem aplicação de regras de negócio**.
 
 Principais atividades:
 - Padronização dos nomes das colunas (`snake_case`)
@@ -88,7 +88,7 @@ Principais atividades:
 - Geração de um dataset tratado para uso posterior em SQL Server
 
 📌 **Importante:**  
-Os valores financeiros não foram alterados nesta etapa. Toda validação e regra de negócio é aplicada posteriormente no SQL.
+Os valores financeiros não foram alterados nesta etapa. Toda validação, cálculo de métricas e regra de negócio é aplicada posteriormente no SQL.
 
 ---
 
@@ -97,8 +97,8 @@ Os valores financeiros não foram alterados nesta etapa. Toda validação e regr
 A Análise Exploratória foi realizada em Python, utilizando Jupyter Notebooks, com foco em:
 
 - Entendimento do comportamento financeiro do negócio
-- Identificação de padrões, tendências e outliers
-- Avaliação de eficiência, rentabilidade e sazonalidade
+- Identificação de padrões, tendências e possíveis outliers
+- Avaliação preliminar de eficiência, rentabilidade e sazonalidade
 - Geração de insights claros e acionáveis
 
 Cada notebook contém:
@@ -109,16 +109,17 @@ Cada notebook contém:
 
 ---
 
-### 3️⃣ SQL Server — Camada Analítica
+### 3️⃣ SQL Server — Camada Analítica e Validação de Métricas
 
 Após a EDA, o projeto avança para o **SQL Server**, simulando um ambiente corporativo de Analytics / BI.
 
-Nesta etapa, o SQL é utilizado como **fonte oficial da verdade**, onde:
+Embora muitas análises tenham sido exploradas em Python, o SQL Server é utilizado como a **fonte oficial da verdade**, garantindo consistência, reprodutibilidade e centralização das métricas.
 
+Nesta etapa:
 - Os dados tratados são carregados sem regras de negócio
-- Métricas são recalculadas e validadas
+- Métricas financeiras são recalculadas e validadas
 - Regras de negócio são aplicadas de forma explícita
-- Views analíticas são criadas para consumo em BI
+- Consultas analíticas documentadas são desenvolvidas para consumo em BI
 
 Principais análises desenvolvidas em SQL:
 - Validação de vendas, lucro, COGS e margens
@@ -136,7 +137,7 @@ Técnicas utilizadas:
 
 ### 4️⃣ Business Intelligence (Próxima Etapa)
 
-As views criadas no SQL Server servirão como base para o desenvolvimento de dashboards, com foco em:
+As consultas desenvolvidas no SQL Server servirão como base para o desenvolvimento de dashboards, com foco em:
 
 - Visão financeira executiva
 - Performance por país, produto e segmento
