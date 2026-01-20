@@ -170,7 +170,7 @@ O dashboard é organizado em **5 páginas analíticas**:
 
 📥 **Download do Dashboard**  
 O arquivo do dashboard está disponível para download no link abaixo:  
-[*Diretório dos arquivos*](https://drive.google.com/drive/folders/1yrT8Tif19CZaPK5DmSQ0ss7H2HBnrKlO?usp=sharing)
+[*Diretório dos arquivos*](https://kutt.it/dashboard-financeiro)
 
 📁 Conteúdo no diretório:
 - financial.xlsx *(base de dados tratada)*
