@@ -1,204 +1,172 @@
-# 📊💰 Análise Financeira e Comercial — Dados, SQL Server e Business Intelligence
+# 📊💰 Análise Financeira e Comercial — BI, SQL Server e Tomada de Decisão
 
 ## 👀 Visão Geral do Projeto
 
-Este projeto apresenta uma **análise financeira e comercial end-to-end**, baseada em um conjunto de dados que simula as vendas de uma empresa multinacional atuando em diferentes **países, produtos, segmentos de clientes e políticas de desconto**.
+Este projeto apresenta uma **análise financeira e comercial completa**, simulando um cenário corporativo real de **Business Intelligence**, no qual dados são transformados em **informações confiáveis para suporte à tomada de decisão estratégica**.
 
-O trabalho foi desenvolvido seguindo **boas práticas de Análise de Dados e BI**, simulando um cenário corporativo real, no qual os dados percorrem um fluxo estruturado de:
+A análise é baseada em um dataset que representa vendas de uma empresa multinacional, com operações em diferentes **países, produtos, segmentos de clientes e políticas de desconto**.
 
-- Limpeza e preparação  
-- Análise Exploratória de Dados (EDA)  
-- Consolidação e validação de métricas em **SQL Server**  
-- Modelagem e visualização em **Business Intelligence (Power BI)**  
+O foco do projeto está em:
+- Estruturar dados com qualidade
+- Consolidar métricas financeiras confiáveis
+- Analisar desempenho, rentabilidade e eficiência
+- Comunicar insights de forma clara para gestores
 
-O dataset original utilizado está disponível no Kaggle:  
+📌 Dataset original disponível no Kaggle:  
 [*Financial Sample*](https://www.kaggle.com/datasets/nickolashirata/financial-sample)
 
 ---
 
 ## 🎯 Objetivo do Projeto
 
-O objetivo principal é demonstrar, de forma prática, como **dados brutos podem ser transformados em insights estratégicos**, apoiando a tomada de decisão em um contexto corporativo.
+Demonstrar, de forma prática, como **dados financeiros brutos podem ser organizados, analisados e transformados em insights acionáveis**, apoiando decisões relacionadas a:
 
-O projeto busca responder perguntas relacionadas a:
-- Rentabilidade do negócio  
-- Crescimento e desempenho ao longo do tempo  
-- Eficiência operacional  
-- Impacto de políticas de desconto  
-- Performance por país, produto e segmento  
+- Rentabilidade e margens
+- Crescimento sustentável
+- Eficiência operacional
+- Estratégias de desconto
+- Performance por país, produto e segmento
 
-Além disso, o projeto evidencia a separação clara entre:
-- **Exploração e entendimento inicial dos dados (Python / EDA)**  
-- **Cálculo oficial de métricas e regras de negócio (SQL Server)**  
-- **Consumo analítico e storytelling (Business Intelligence)**  
+O projeto segue uma separação clara entre:
+- **Preparação dos dados (Python)**
+- **Cálculo oficial de métricas e regras de negócio (SQL Server)**
+- **Análise visual e storytelling (Power BI)**
 
 ---
 
 ## 🧠 Problema de Negócio
 
-As análises desenvolvidas ao longo do projeto buscam responder às seguintes questões estratégicas:
+Em um cenário de empresa multinacional, a gestão precisa responder perguntas como:
 
 ### 📈 Desempenho Financeiro
-- Qual foi o faturamento e o lucro total do negócio?
-- Como vendas e lucro evoluem ao longo do tempo?
-- O crescimento de vendas foi acompanhado pelo crescimento do lucro?
-- A margem de lucro se manteve saudável?
+- O negócio é lucrativo?
+- O crescimento de vendas acompanha o crescimento do lucro?
+- As margens permanecem saudáveis ao longo do tempo?
 
 ### 🌍 Performance por País
-- Quais países mais contribuem para vendas e lucro?
-- Existem países com alto volume de vendas, mas baixa margem?
-- Quais mercados são mais eficientes financeiramente?
+- Quais países geram mais lucro?
+- Onde há alto volume de vendas, mas baixa eficiência?
+- Quais mercados são mais estratégicos financeiramente?
 
-### 📦 Análise de Produtos
-- Quais produtos geram mais vendas e lucro?
-- Quais produtos possuem margem abaixo da média?
-- Onde o custo operacional impacta diretamente a rentabilidade?
+### 📦 Produtos
+- Quais produtos concentram vendas e lucro?
+- Existem produtos com margens abaixo da média?
+- Onde o custo impacta diretamente a rentabilidade?
 
-### 💸 Impacto dos Descontos
-- Descontos maiores realmente geram mais lucro?
-- Qual faixa de desconto maximiza lucro e margem?
-- Existem descontos que aumentam vendas, mas corroem a margem?
+### 💸 Descontos
+- Descontos aumentam vendas, lucro ou apenas volume?
+- Quais faixas de desconto são sustentáveis?
+- Onde a margem está sendo corroída?
 
 ### ⚙️ Eficiência Operacional
 - Qual a relação entre COGS e vendas?
-- Quais produtos são mais eficientes operacionalmente?
+- Quais produtos operam com maior eficiência?
 - Onde existem oportunidades de otimização de custos?
-
-### 📆 Tendência Temporal
-- Existe padrão de crescimento ao longo do tempo?
-- Há meses com desempenho consistentemente melhor ou pior?
-- O lucro acompanha o comportamento das vendas?
 
 ---
 
 ## 🛠️ Etapas do Projeto
 
-### 1️⃣ Limpeza e Preparação dos Dados (Python)
+### 1️⃣ Preparação e Qualidade dos Dados (Python)
 
-Nesta etapa inicial, os dados foram tratados para garantir consistência e qualidade, **sem aplicação de regras de negócio**.
+Os dados foram tratados para garantir **consistência, padronização e confiabilidade**, sem aplicação de regras de negócio.
 
-Principais atividades:
-- Padronização dos nomes das colunas (`snake_case`)
-- Conversão correta dos tipos de dados
-- Tratamento de colunas categóricas
+Principais ações:
+- Padronização de colunas (`snake_case`)
+- Conversão correta de tipos de dados
+- Tratamento de categorias
 - Remoção de inconsistências
 - Preservação dos valores financeiros originais
-- Geração de dataset limpo para consumo posterior
 
-📌 **Importante:**  
-Nenhuma métrica financeira foi calculada nesta etapa. Todas as regras de negócio são aplicadas posteriormente no SQL Server.
+📌 Nenhuma métrica financeira é calculada nesta etapa.
 
 ---
 
-### 2️⃣ Análise Exploratória de Dados (EDA)
+### 2️⃣ SQL Server — Camada Analítica e Regras de Negócio
 
-A Análise Exploratória foi realizada em Python (Jupyter Notebook), com foco em:
+O **SQL Server atua como fonte oficial da verdade**, simulando um ambiente corporativo de BI.
 
-- Entendimento do comportamento financeiro
-- Identificação de padrões e tendências
-- Avaliação preliminar de eficiência e rentabilidade
-- Geração de insights acionáveis
-
-Cada notebook contém:
-- Objetivo da análise
-- Perguntas de negócio
-- Código comentado
-- Seção final de **insights consolidados**
-
----
-
-### 3️⃣ SQL Server — Camada Analítica e Validação de Métricas
-
-O SQL Server é utilizado como a **fonte oficial da verdade**, simulando um ambiente corporativo de BI.
-
-Nesta etapa:
-- Os dados tratados são carregados sem regras de negócio
-- Métricas são recalculadas e validadas
+Nesta camada:
+- Métricas financeiras são recalculadas
 - Regras de negócio são aplicadas explicitamente
-- Queries documentadas são desenvolvidas para consumo em BI
+- Análises são documentadas e reutilizáveis
+- Dados ficam prontos para consumo em BI
 
-Principais análises desenvolvidas em SQL:
-- Validação de vendas, lucro, COGS e margens
-- Análises temporais (Year-over-Year)
+Principais análises:
+- Vendas, lucro, COGS e margens
+- Análises temporais (YoY)
 - Rankings por país e produto
 - Impacto de descontos
 - Eficiência operacional
 
 Técnicas utilizadas:
-- CTEs  
-- Window Functions (`LAG`, `OVER`)  
-- Queries documentadas e organizadas por análise  
+- CTEs
+- Window Functions (`LAG`, `OVER`)
+- Queries organizadas e documentadas
 
 ---
 
-### 4️⃣ Business Intelligence — Dashboard Analítico (Power BI)
+### 3️⃣ Business Intelligence — Dashboard Analítico (Power BI)
 
-Nesta etapa final, os dados consolidados no SQL Server são consumidos no **Power BI**, com foco em **storytelling e tomada de decisão**.
+Os dados consolidados são consumidos no **Power BI**, com foco em **análise visual, storytelling e apoio à decisão**.
 
-O dashboard foi construído com **modelagem dimensional (Star Schema)**, incluindo:
-- Tabela fato financeira
-- Tabela calendário dedicada
+O modelo segue **modelagem dimensional (Star Schema)**, incluindo:
+- Fato financeira
+- Dimensão calendário
 - Dimensões de produto, país e desconto
 
 #### 📊 Estrutura do Dashboard
 
-O dashboard é organizado em **5 páginas analíticas**:
+O dashboard é dividido em **5 visões analíticas**:
 
 **1️⃣ Visão Executiva**
-- KPIs: Vendas Totais, Lucro Total, Margem de Lucro, Vendas YoY (%), Lucro YoY (%)
-- Evolução mensal de vendas e lucro
-- Visão geral da saúde financeira do negócio
+- KPIs: Vendas, Lucro, Margem, Vendas YoY, Lucro YoY
+- Evolução temporal
+- Visão geral da saúde financeira
 
 **2️⃣ Desempenho por País**
 - Ranking de países por lucro
-- Relação entre vendas e lucro por país
-- Identificação de mercados mais eficientes
+- Relação entre vendas e eficiência
 
 **3️⃣ Análise por Produto**
-- Comparação entre vendas, custos (COGS) e lucro
-- Margem de lucro por produto
-- Identificação de produtos com baixa eficiência
+- Vendas, COGS e lucro
+- Margem por produto
 
 **4️⃣ Impacto dos Descontos**
-- Análise de vendas, lucro e margem por faixa de desconto
 - Avaliação do impacto real dos descontos na rentabilidade
 
 **5️⃣ Eficiência Operacional**
-- Relação entre COGS e vendas
-- Indicadores de eficiência por produto
+- Relação entre custos e vendas
 - Apoio a decisões de precificação e custos
 
-📥 **Download do Dashboard**  
-O arquivo do dashboard está disponível para download no link abaixo:  
+📥 **Download dos arquivos**  
 [*Diretório dos arquivos*](https://kutt.it/dashboard-financeiro)
 
-📁 Conteúdo no diretório:
-- financial.xlsx *(base de dados tratada)*
-- Financial.pbix *(dashboard Power BI)*
+📁 Conteúdo:
+- `financial.xlsx`
+- `Financial.pbix`
 
-⚠️ Para visualizar o dashboard, é necessário ter o Power BI Desktop instalado.
+⚠️ Requer Power BI Desktop.
 
 ---
 
 ## 💡 Impacto no Negócio
 
-Este projeto demonstra como dados podem ser utilizados para:
-
+Este projeto permite:
 - Avaliar a saúde financeira do negócio
-- Identificar oportunidades de crescimento
+- Identificar mercados e produtos mais eficientes
+- Apoiar decisões de precificação e desconto
 - Otimizar custos e margens
-- Revisar estratégias de desconto
-- Apoiar decisões estratégicas com base em dados confiáveis
+- Sustentar decisões estratégicas com dados confiáveis
 
 ---
 
 ## 🧰 Tecnologias Utilizadas
 
 | Tecnologia | Finalidade |
-|---------|-----------|
-| Python | Limpeza e EDA |
-| Pandas | Manipulação de dados |
-| Jupyter Notebook | Análise exploratória |
+|----------|-----------|
+| Python | Preparação de dados |
+| Pandas | Manipulação |
 | SQL Server | Camada analítica |
 | Power BI | Visualização e storytelling |
 | Git & GitHub | Versionamento |
