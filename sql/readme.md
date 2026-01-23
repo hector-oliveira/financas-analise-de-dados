@@ -1,25 +1,44 @@
-# 🧠 SQL Server — Camada Analítica
+# 🧠 Camada Analítica — SQL Server
 
-Esta pasta contém as **análises desenvolvidas em SQL Server**, responsáveis por consolidar métricas, aplicar regras de negócio e gerar resultados prontos para consumo em BI.
+Esta pasta contém as **análises desenvolvidas em SQL Server**, responsáveis por consolidar métricas,
+aplicar regras de negócio e gerar dados prontos para consumo em ferramentas de BI.
 
-O SQL representa a **fonte oficial da verdade**, onde os dados tratados são:
+Nesta etapa, o SQL atua como a **fonte oficial da verdade**, onde os dados são:
 - Validados
 - Agregados
-- Analisados sob a ótica de negócio
+- Transformados em métricas de negócio
+- Preparados para análises e dashboards
 
-As análises foram organizadas por **tema analítico**, facilitando leitura, manutenção e avaliação técnica.
+A organização simula um **ambiente real de Analytics / Business Intelligence**.
 
-## Estrutura das análises
+---
 
-Cada subpasta contém:
-- Um ou mais arquivos `.sql` com queries documentadas
-- (Quando aplicável) screenshots (`.png`) com o resultado das queries
-- Um `README.md` explicando o objetivo e a lógica da análise
+## 🎯 Objetivo da camada SQL
 
-## Técnicas utilizadas
-- CTEs (Common Table Expressions)
-- Window Functions (`OVER`, `LAG`, `RANK`)
-- Agregações e métricas financeiras
-- Queries legíveis e bem documentadas
+- Transformar dados brutos em **informações acionáveis**
+- Aplicar **regras de negócio** diretamente nas consultas
+- Criar métricas confiáveis para suporte à tomada de decisão
+- Garantir consistência entre análises e visualizações
 
-Esta organização simula um ambiente real de Analytics / BI em SQL Server.
+---
+
+## 🗂️ Estrutura das análises
+
+As análises foram organizadas por **tema analítico**, facilitando a leitura e manutenção:
+
+```text
+sql/
+├── country_and_segment_performance/
+│   └── Análises financeiras por país e contribuição no resultado
+│
+├── discount_impact/
+│   └── Impacto das faixas de desconto sobre lucro e margem
+│
+├── financial_performance/
+│   └── Evolução temporal do lucro e tendências financeiras
+│
+├── operational_efficiency/
+│   └── Eficiência operacional por produto (custo x margem)
+│
+└── product_analysis/
+    └── Rentabilidade e margem de lucro por produto
