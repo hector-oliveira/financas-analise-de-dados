@@ -59,7 +59,7 @@ Em um cenário de empresa multinacional, a gestão precisa responder perguntas c
 - Onde a margem está sendo corroída?
 
 ### ⚙️ Eficiência Operacional
-- Qual a relação entre COGS e vendas?
+- Qual a relação entre os custos de mercadoria e as vendas?
 - Quais produtos operam com maior eficiência?
 - Onde existem oportunidades de otimização de custos?
 
@@ -93,7 +93,7 @@ Nesta camada:
 - Dados ficam prontos para consumo em BI
 
 Principais análises:
-- Vendas, lucro, COGS e margens
+- Vendas, lucro, custos e margens
 - Análises temporais (YoY)
 - Rankings por país e produto
 - Impacto de descontos
@@ -115,31 +115,62 @@ O modelo segue **modelagem dimensional (Star Schema)**, incluindo:
 - Dimensão calendário
 - Dimensões de produto, país e desconto
 
-#### 📊 Estrutura do Dashboard
+## 📊 Estrutura do Dashboard
 
 O dashboard é dividido em **5 visões analíticas**:
 
-**1️⃣ Visão Executiva**
-- KPIs: Vendas, Lucro, Margem, Vendas YoY, Lucro YoY
-- Evolução temporal
-- Visão geral da saúde financeira
+### 1️⃣ Visão Executiva
+- **🔢 Indicadores Principais (KPIs):** Faturamento Total, Lucro Líquido, Eficiência (Margem %), Crescimento do Lucro e Crescimento de Vendas.
+- **📊 Análises disponíveis:** Evolução mensal do faturamento comparado ao lucro e indicadores de expansão.
+- **🎯 Objetivo:** Monitorar se a empresa está crescendo com saúde financeira e rentabilidade.
+- **🧠 Insight-chave:** A operação demonstra uma expansão agressiva, conseguindo manter a margem de lucro estável, o que prova que o crescimento é sustentável.
 
-**2️⃣ Desempenho por País**
-- Ranking de países por lucro
-- Relação entre vendas e eficiência
+![Dashboard – Visão Executiva](screenshots/executiva_financeira.png)
 
-**3️⃣ Análise por Produto**
-- Vendas, COGS e lucro
-- Margem por produto
+---
 
-**4️⃣ Impacto dos Descontos**
-- Avaliação do impacto real dos descontos na rentabilidade
+### 2️⃣ Desempenho por País
+- **🔢 Indicadores Principais (KPIs):** Ranking de Lucratividade, Volume de Vendas por Região e Eficiência por País.
+- **📊 Análises disponíveis:** Comparação direta entre volume vendido e lucro real gerado por cada mercado (Gráfico de Dispersão).
+- **🎯 Objetivo:** Identificar quais países trazem o melhor retorno financeiro para priorizar investimentos.
+- **🧠 Insight-chave:** França e Alemanha lideram em eficiência (margem superior a 15,5%), apesar dos EUA apresentarem o maior volume bruto de faturamento.
 
-**5️⃣ Eficiência Operacional**
-- Relação entre custos e vendas
-- Apoio a decisões de precificação e custos
+![Dashboard – Desempenho por País](screenshots/performance_paises.png)
 
-📥 **Download dos arquivos**  
+---
+
+### 3️⃣ Análise por Produto
+- **🔢 Indicadores Principais (KPIs):** Lucro por Produto, Margem de Contribuição por Item e Volume de Vendas.
+- **📊 Análises disponíveis:** Comparativo entre os produtos que mais geram caixa versus os que são mais rentáveis.
+- **🎯 Objetivo:** Apoiar decisões sobre o mix de produtos e campanhas de vendas focadas em rentabilidade.
+- **🧠 Insight-chave:** O produto **Paseo** é o maior gerador de lucro absoluto **$ 4,8 Mi**, enquanto o **Amarilla** entrega a maior margem individual do portfólio **15,86%**.
+
+![Dashboard – Análise por Produto](screenshots/analise_produtos.png)
+
+---
+
+### 4️⃣ Impacto dos Descontos
+- **🔢 Indicadores Principais (KPIs):** Faturamento e Lucro por Nível de Desconto, Margem Real após Promoções.
+- **📊 Análises disponíveis:** Avaliação do impacto real das políticas de desconto na rentabilidade final.
+- **🎯 Objetivo:** Ajustar a estratégia comercial para evitar perdas de lucro desnecessárias em campanhas agressivas.
+- **🧠 Insight-chave:** Descontos de nível "Alto" reduzem a margem para menos de 10%. O patamar "Médio" mantém o volume com uma rentabilidade aceitável de 14,39%.
+
+![Dashboard – Impacto dos Descontos](screenshots/impacto_descontos.png)
+
+---
+
+### 5️⃣ Eficiência Operacional
+- **🔢 Indicadores Principais (KPIs):** Custo Total de Mercadorias, Percentual de Custo sobre a Venda e Rentabilidade Operacional.
+- **📊 Análises disponíveis:** Relação direta entre o faturamento e os custos operacionais por produto.
+- **🎯 Objetivo:** Identificar oportunidades de otimização de custos para proteger a margem de lucro.
+- **🧠 Insight-chave:** O custo médio operacional consome 85,77% do faturamento. O produto **Velo** apresenta o maior desafio, com custo sobre venda de 87,36%.
+
+![Dashboard – Eficiência Operacional](screenshots/eficiencia_operacional.png)
+
+---
+
+📥 **Download dos arquivos** 
+
 [*Diretório dos arquivos*](https://kutt.it/dashboard-financeiro)
 
 📁 Conteúdo:
@@ -167,7 +198,7 @@ Este projeto permite:
 |----------|-----------|
 | Python | Preparação de dados |
 | Pandas | Manipulação |
-| SQL Server | Camada analítica |
+| SQL Server | Camada analítica e regras de negócio |
 | Power BI | Visualização e storytelling |
 | Git & GitHub | Versionamento |
 | Excel | Fonte de dados |
@@ -178,5 +209,4 @@ Este projeto permite:
 
 **Hector Oliveira**  
 Analista de Dados Júnior  
-
 🔗 [LinkedIn](https://www.linkedin.com/in/hectoroliveira-tech/)
