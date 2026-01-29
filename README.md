@@ -177,7 +177,7 @@ O dashboard é dividido em **5 visões analíticas**:
 - `financial.xlsx` - Base de dados utilizada no projeto
 - `Financial.pbix` - Arquivo Dashboard desenvolvido no Power BI
 
-⚠️ Requer Power BI Desktop.
+⚠️ Requer Power BI Desktop instalado no computador.
 
 ---
 
