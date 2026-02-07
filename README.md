@@ -120,50 +120,81 @@ O modelo segue **modelagem dimensional (Star Schema)**, incluindo:
 O dashboard é dividido em **5 visões analíticas**:
 
 ### 1️⃣ Visão Executiva
-- **🔢 Indicadores Principais (KPIs):** Faturamento Total, Lucro Líquido, Eficiência (Margem %), Crescimento do Lucro e Crescimento de Vendas.
-- **📊 Análises disponíveis:** Evolução mensal do faturamento comparado ao lucro e indicadores de expansão.
-- **🎯 Objetivo:** Monitorar se a empresa está crescendo com saúde financeira e rentabilidade.
-- **🧠 Insight-chave:** A operação demonstra uma expansão agressiva, conseguindo manter a margem de lucro estável, o que prova que o crescimento é sustentável.
+- **🔢 Indicadores Principais (KPIs):** 
+  - Faturamento Total,
+  - Lucro Líquido,
+  - Eficiência (Margem %),
+  - Crescimento do Lucro
+  - Crescimento de Vendas
+- **📊 Análises disponíveis:**  
+  - Evolução mensal do faturamento comparado ao lucro e indicadores de expansão.
+- **🎯 Objetivo:**
+  - Monitorar se a empresa está crescendo com saúde financeira e rentabilidade.
+- **🧠 Insight-chave:** 
+  - A operação demonstra uma expansão agressiva, conseguindo manter a margem de lucro estável, o que prova que o crescimento é sustentável.
 
 ![Dashboard – Visão Executiva](screenshots/executiva_financeira.png)
 
 ---
 
 ### 2️⃣ Desempenho por País
-- **🔢 Indicadores Principais (KPIs):** Ranking de Lucratividade, Volume de Vendas por Região e Eficiência por País.
-- **📊 Análises disponíveis:** Comparação direta entre volume vendido e lucro real gerado por cada mercado (Gráfico de Dispersão).
-- **🎯 Objetivo:** Identificar quais países trazem o melhor retorno financeiro para priorizar investimentos.
-- **🧠 Insight-chave:** França e Alemanha lideram em eficiência (margem superior a 15,5%), apesar dos EUA apresentarem o maior volume bruto de faturamento.
+- **🔢 Indicadores Principais (KPIs):** 
+  - Ranking de Lucratividade,
+  - Volume de Vendas por Região
+  - Eficiência por País.
+- **📊 Análises disponíveis:** 
+  - Comparação direta entre volume vendido e lucro real gerado por cada mercado (Gráfico de Dispersão).
+- **🎯 Objetivo:**
+  - Identificar quais países trazem o melhor retorno financeiro para priorizar investimentos.
+- **🧠 Insight-chave:**
+  - França e Alemanha lideram em eficiência (margem superior a 15,5%), apesar dos EUA apresentarem o maior volume bruto de faturamento.
 
 ![Dashboard – Desempenho por País](screenshots/performance_paises.png)
 
 ---
 
 ### 3️⃣ Análise por Produto
-- **🔢 Indicadores Principais (KPIs):** Lucro por Produto, Margem de Contribuição por Item e Volume de Vendas.
-- **📊 Análises disponíveis:** Comparativo entre os produtos que mais geram caixa versus os que são mais rentáveis.
-- **🎯 Objetivo:** Apoiar decisões sobre o mix de produtos e campanhas de vendas focadas em rentabilidade.
-- **🧠 Insight-chave:** O produto **Paseo** é o maior gerador de lucro absoluto **$ 4,8 Mi**, enquanto o **Amarilla** entrega a maior margem individual do portfólio **15,86%**.
+- **🔢 Indicadores Principais (KPIs):** 
+  - Lucro por Produto,
+  - Margem de Contribuição por Item
+  - Volume de Vendas.
+- **📊 Análises disponíveis:**
+  - Comparativo entre os produtos que mais geram caixa versus os que são mais rentáveis.
+- **🎯 Objetivo:**
+  - Apoiar decisões sobre o mix de produtos e campanhas de vendas focadas em rentabilidade.
+- **🧠 Insight-chave:**
+  - O produto **Paseo** é o maior gerador de lucro absoluto **$ 4,8 Mi**, enquanto o **Amarilla** entrega a maior margem individual do portfólio **15,86%**.
 
 ![Dashboard – Análise por Produto](screenshots/analise_produtos.png)
 
 ---
 
 ### 4️⃣ Impacto dos Descontos
-- **🔢 Indicadores Principais (KPIs):** Faturamento e Lucro por Nível de Desconto, Margem Real após Promoções.
-- **📊 Análises disponíveis:** Avaliação do impacto real das políticas de desconto na rentabilidade final.
-- **🎯 Objetivo:** Ajustar a estratégia comercial para evitar perdas de lucro desnecessárias em campanhas agressivas.
-- **🧠 Insight-chave:** Descontos de nível "Alto" reduzem a margem para menos de 10%. O patamar "Médio" mantém o volume com uma rentabilidade aceitável de 14,39%.
+- **🔢 Indicadores Principais (KPIs):** 
+  - Faturamento
+  - Lucro por Nível de Desconto, Margem Real após Promoções.
+- **📊 Análises disponíveis:** 
+  - Avaliação do impacto real das políticas de desconto na rentabilidade final.
+- **🎯 Objetivo:** 
+  - Ajustar a estratégia comercial para evitar perdas de lucro desnecessárias em campanhas agressivas.
+- **🧠 Insight-chave:** 
+  - Descontos de nível "Alto" reduzem a margem para menos de 10%. O patamar "Médio" mantém o volume com uma rentabilidade aceitável de 14,39%.
 
 ![Dashboard – Impacto dos Descontos](screenshots/impacto_descontos.png)
 
 ---
 
 ### 5️⃣ Eficiência Operacional
-- **🔢 Indicadores Principais (KPIs):** Custo Total de Mercadorias, Percentual de Custo sobre a Venda e Rentabilidade Operacional.
-- **📊 Análises disponíveis:** Relação direta entre o faturamento e os custos operacionais por produto.
-- **🎯 Objetivo:** Identificar oportunidades de otimização de custos para proteger a margem de lucro.
-- **🧠 Insight-chave:** O custo médio operacional consome 85,77% do faturamento. O produto **Velo** apresenta o maior desafio, com custo sobre venda de 87,36%.
+- **🔢 Indicadores Principais (KPIs):**
+  - Custo Total de Mercadorias,
+  - Percentual de Custo sobre a Venda
+  - Rentabilidade Operacional.
+- **📊 Análises disponíveis:**
+  - Relação direta entre o faturamento e os custos operacionais por produto.
+- **🎯 Objetivo:**
+  - Identificar oportunidades de otimização de custos para proteger a margem de lucro.
+- **🧠 Insight-chave:**
+  - O custo médio operacional consome 85,77% do faturamento. O produto **Velo** apresenta o maior desafio, com custo sobre venda de 87,36%.
 
 ![Dashboard – Eficiência Operacional](screenshots/eficiencia_operacional.png)
 
