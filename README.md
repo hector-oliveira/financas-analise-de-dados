@@ -1,4 +1,4 @@
-# 📊💰 Análise Financeira e Comercial — BI, SQL Server e Tomada de Decisão
+# 📊💰 Análise Financeira e Comercial
 
 ## 👀 Visão Geral do Projeto
 
@@ -205,10 +205,10 @@ O dashboard é dividido em **5 visões analíticas**:
 [*Diretório dos arquivos*](https://kutt.it/dashboard-financeiro)
 
 📁 Conteúdo:
-- `financial.xlsx`
-- `Financial.pbix`
+- `financial.xlsx` - Base de dados utilizada no projeto
+- `Financial.pbix` - Arquivo Dashboard desenvolvido no Power BI
 
-⚠️ Requer Power BI Desktop.
+⚠️ Requer Power BI Desktop instalado no computador.
 
 ---
 
