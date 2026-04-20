@@ -197,13 +197,12 @@ O dashboard é dividido em **5 visões analíticas**:
 
 ### Download dos arquivos
 
-[*Diretório dos arquivos*](https://kutt.it/dashboard-financeiro)
+[*Diretório dos arquivos*](https://drive.google.com/drive/folders/1yrT8Tif19CZaPK5DmSQ0ss7H2HBnrKlO?usp=sharing)
 
 Conteúdo:
-- `financial.xlsx` - Base de dados utilizada no projeto
 - `Financial.pbix` - Arquivo Dashboard desenvolvido no Power BI
 
-Requer Power BI Desktop instalado no computador.
+Clique no link acima para fazer o download do relatório do projeto. Para visualização do dashboard requer ter o Power BI Desktop instalado no computador.
 
 ---
 
