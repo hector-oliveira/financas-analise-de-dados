@@ -197,12 +197,12 @@ O dashboard é dividido em **5 visões analíticas**:
 
 ### Download dos arquivos
 
+Clique no link abaixo para fazer o download do relatório do projeto. Para visualização do dashboard requer ter o Power BI Desktop instalado no computador. 
+
 [*Diretório dos arquivos*](https://drive.google.com/drive/folders/1yrT8Tif19CZaPK5DmSQ0ss7H2HBnrKlO?usp=sharing)
 
 Conteúdo:
 - `Financial.pbix` - Arquivo Dashboard desenvolvido no Power BI
-
-Clique no link acima para fazer o download do relatório do projeto. Para visualização do dashboard requer ter o Power BI Desktop instalado no computador.
 
 ---
 
