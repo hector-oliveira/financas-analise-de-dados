@@ -136,6 +136,37 @@ Produtos com custo alto podem se tornar inviáveis financeiramente caso ocorra v
 Revisar estrutura de custo e política de preço para produtos com maior impacto negativo na margem.
 
 ---
+## Impacto dos Descontos
+
+### Perguntas
+
+- Descontos aumentam rentabilidade ou apenas volume de vendas?
+- Quais níveis de descontos são sustentáveis?
+- Onde a margem está sendo reduzida?
+  
+### Indicadores Orientados
+
+- Descontos elevados apresentam margens menores.
+- Faixa de descontos médio mantêm o equilíbrio entre volume e rentabilidade.
+- Operações sem descontos implicam em maior eficiência financeira.
+
+![Dashboard - Descontos](/screenshots/impacto_descontos.png)
+
+### Interpretação Executiva
+
+**Achado**  
+Descontos elevados reduzem a margem operacional.
+
+**Impacto**  
+Embora aumentem o volume de vendas, reduzem o lucro proporcional.
+
+**Risco**  
+Uso frequente de descontos agressivos pode comprometer a rentabilidade total.
+
+**Recomendação**  
+Limitar descontos elevados, passando a utilizar mais descontos médios, baixos ou sem desconto e monitorar impacto financeiro durante a aplicação.
+
+--- 
 
 # Prioridades Imediatas
 # Arquitetura do Projeto
