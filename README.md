@@ -74,6 +74,38 @@ Monitorar a evolução mensal da margem e definir metas mínimas de rentabilidad
 
 ---
 
+## Desempenho por país
+
+### Perguntas
+
+- Quais países geram mais retorno financeiro?
+- Onde há alto volume e baixa eficiência?
+- Quais mercados devem ser priorizados?
+
+### Indicadores Observados
+
+- **França** e **Alemanha** apresentam margens superiores a **15%**
+- **Estado Unidos** possui **alto volume de venda** com **eficiência inferior à média**
+- México apresenta menor geração proporcional de lucro
+
+![Dashboard - Visão Executiva](/screenshots/performance_paises.png)
+
+### Interpretação Executiva
+
+**Achado**  
+Existem mercados com alto volume de vendas, mas eficiência inferior à média geral.
+
+**Impacto**  
+Recursos comerciais podem estar sendo direcionados para regiões com menor retorno financeiro.
+
+**Risco**  
+Manter investimentos em mercados pouco eficientes pode reduzir a rentabilidade total do negócio.
+
+**Recomendação**  
+Priorizar investimentos em mercados com maior margem e revisar estratégias comerciais nos países com menor eficiência.
+
+---
+
 # Prioridades Imediatas
 # Arquitetura do Projeto
 # Principais Indicadores Monitorados
