@@ -136,6 +136,69 @@ Produtos com custo alto podem se tornar inviáveis financeiramente caso ocorra v
 Revisar estrutura de custo e política de preço para produtos com maior impacto negativo na margem.
 
 ---
+## Impacto dos Descontos
+
+### Perguntas
+
+- Descontos aumentam rentabilidade ou apenas volume de vendas?
+- Quais níveis de descontos são sustentáveis?
+- Onde a margem está sendo reduzida?
+  
+### Indicadores Orientados
+
+- Descontos elevados apresentam margens menores.
+- Faixa de descontos médio mantêm o equilíbrio entre volume e rentabilidade.
+- Operações sem descontos implicam em maior eficiência financeira.
+
+![Dashboard - Descontos](/screenshots/impacto_descontos.png)
+
+### Interpretação Executiva
+
+**Achado**  
+Descontos elevados reduzem a margem operacional.
+
+**Impacto**  
+Embora aumentem o volume de vendas, reduzem o lucro proporcional.
+
+**Risco**  
+Uso frequente de descontos agressivos pode comprometer a rentabilidade total.
+
+**Recomendação**  
+Limitar descontos elevados, passando a utilizar mais descontos médios, baixos ou sem desconto e monitorar impacto financeiro durante a aplicação.
+
+--- 
+
+## Eficiência Operacional
+
+### Perguntas
+
+- Qual a relação entre custo e receita?
+- Quais produtos operam com maior eficiência?
+- Onde existem oportunidades de melhoria?
+
+### Indicadores Operacionais
+
+- Custos operacionais consomem cerca de **85,77%** da receita total.
+- Alguns produtos operam próximo ao limite mínimo de rentabilidade.
+- Pequenas variações de custo impactam diretamente o lucro final.
+
+![Dashboard - Eficiência Operacional](/screenshots/eficiencia_operacional.png)
+
+### Interpretação Executiva
+
+**Achado**  
+O nível geral é bem elevado e impacta diretamente a margem do negócio.
+
+**Impacto**  
+A rentabilidade torna-se altamente dependente da estabilidade dos custos operacionais.
+
+**Risco**  
+Aumento de custos pode reduzir rapidamente o lucro, mesmo com crescimento de vendas.
+
+**Recomendação**  
+Priorizar iniciativas de redução de custo e monitorar produtos com maior percentual de custo sobre venda.
+
+---
 
 # Prioridades Imediatas
 # Arquitetura do Projeto
