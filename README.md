@@ -25,6 +25,20 @@ O projeto tem como prioridade identificar **riscos e apoiar decisões possíveis
 ---
 
 # Problema de Negócio
+
+A empresa apresenta um aumento constante em vendas e presença internacional, mas existem dúvidas estratégicas sobre a sustentabilidade desse crescimento.
+
+A gestão precisa entender:
+
+- Se o aumento nas vendas está sendo acompanhado por aumento proporcional no lucro.
+- Se algumas operações estão consumindo margem silenciosa.
+- Se políticas comerciais, como descontos, estão impactando negativamente a rentabilidade.
+- Quais produtos e mercados sustentam o resultado financeiro
+
+Sem essa visibilidade, o crescimento pode ocorrer com perda gradual de eficiência.
+
+---
+
 # Principais Perguntas Respondidas
 # Prioridades Imediatas
 # Arquitetura do Projeto
