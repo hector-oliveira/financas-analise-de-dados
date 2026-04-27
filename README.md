@@ -88,7 +88,7 @@ Monitorar a evolução mensal da margem e definir metas mínimas de rentabilidad
 - **Estado Unidos** possui **alto volume de venda** com **eficiência inferior à média**
 - México apresenta menor geração proporcional de lucro
 
-![Dashboard - Visão Executiva](/screenshots/performance_paises.png)
+![Dashboard - Desempenho por País](/screenshots/performance_paises.png)
 
 ### Interpretação Executiva
 
@@ -103,6 +103,37 @@ Manter investimentos em mercados pouco eficientes pode reduzir a rentabilidade t
 
 **Recomendação**  
 Priorizar investimentos em mercados com maior margem e revisar estratégias comerciais nos países com menor eficiência.
+
+---
+
+## Desempenho por Produto
+
+### Perguntas
+
+- Quais produtos geram mais lucro?
+- Existem produtos com margens abaixo da média?
+- Onde o custo impacta diretamente no resultado?
+
+### Indicadores Observados
+
+- O produto **Paseo** apresenta maior lucro absoluto (aproximadamente 4,8 Mi)
+- O produto **Amarilla** apresenta maior margem de lucro (aproximadamente 15,86%)
+- O produto **Velo** apresenta custo operacional elevado (cerca de 87% da receita)
+
+![Dashboard - Desempenho por Produto](/screenshots/analise_produtos.png)
+### Interpretação Executiva
+
+**Achado**  
+Existe uma variação significante entre os produtos.
+
+**Impacto**  
+Produtos com custo elevado reduzem a margem total e aumenta o risco financeiro.
+
+**Risco**  
+Produtos com custo alto podem se tornar inviáveis financeiramente caso ocorra variações operacionais.
+
+**Recomendação**  
+Revisar estrutura de custo e política de preço para produtos com maior impacto negativo na margem.
 
 ---
 
