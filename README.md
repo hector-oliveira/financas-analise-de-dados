@@ -8,7 +8,22 @@ A análise considera operações em diferentes países, produtos e níveis de de
 
 Dataset utilizado: *[Financial Sample - Kaggle](https://www.kaggle.com/datasets/nickolashirata/financial-sample)*
 
+---
+
 # Objetivo do Projeto
+
+Demonstrar como os dados financeiros podem ser organizados e analisados para responder as perguntas de negócio, como:
+
+- O crescimento da empresa está gerando lucro sustentável?
+- Quais produtos sustentam a rentabilidade do negócio?
+- Quais mercados são mais eficientes financeiramente?
+- Descontos estão aumentando lucro ou apenas volume?
+- Onde existe risco operacional que podem comprometer margens?
+
+O projeto tem como prioridade identificar **riscos e apoiar decisões possíveis de serem realizadas**, não apenas apresentar números.
+
+---
+
 # Problema de Negócio
 # Principais Perguntas Respondidas
 # Prioridades Imediatas
