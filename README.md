@@ -1,237 +1,153 @@
-# Análise Financeira e Comercial
+# Analise Financeira e Comercial
 
-## Visão Geral do Projeto
+## Visão Geral
 
-Este projeto apresenta uma **análise financeira e comercial completa**, simulando um cenário corporativo real de **Business Intelligence**, no qual dados são transformados em **informações confiáveis para suporte à tomada de decisão estratégica**.
+Este projeto apresenta uma análise financeira e comercial baseada em dados de vendas de uma empresa multinacional fictícia. O objetivo é transformar dados operacionais em informações que apoiem decisões relacionadas a rentabilidade, crescimento e eficiência.
 
-A análise é baseada em um dataset que representa vendas de uma empresa multinacional, com operações em diferentes **países, produtos, segmentos de clientes e políticas de desconto**.
+A análise considera operações em diferentes países, produtos e níveis de desconto, permitindo avaliar o impacto dessas variáveis na saúde financeira do negócio.
 
-O foco do projeto está em:
-- Estruturar dados com qualidade
-- Consolidar métricas financeiras confiáveis
-- Analisar desempenho, rentabilidade e eficiência
-- Comunicar insights de forma clara para gestores
-
-Dataset original disponível no Kaggle:  
-[*Financial Sample*](https://www.kaggle.com/datasets/nickolashirata/financial-sample)
+Dataset utilizado: *[Financial Sample - Kaggle](https://www.kaggle.com/datasets/nickolashirata/financial-sample)*
 
 ---
 
-## Objetivo do Projeto
+# Objetivo do Projeto
 
-Demonstrar, de forma prática, como **dados financeiros brutos podem ser organizados, analisados e transformados em insights acionáveis**, apoiando decisões relacionadas a:
+Demonstrar como os dados financeiros podem ser organizados e analisados para responder as perguntas de negócio, como:
 
-- Rentabilidade e margens
-- Crescimento sustentável
-- Eficiência operacional
-- Estratégias de desconto
-- Performance por país, produto e segmento
+- O crescimento da empresa está gerando lucro sustentável?
+- Quais produtos sustentam a rentabilidade do negócio?
+- Quais mercados são mais eficientes financeiramente?
+- Descontos estão aumentando lucro ou apenas volume?
+- Onde existe risco operacional que podem comprometer margens?
 
-O projeto segue uma separação clara entre:
-- **Preparação dos dados (Python)**
-- **Cálculo oficial de métricas e regras de negócio (SQL Server)**
-- **Análise visual e storytelling (Power BI)**
+O projeto tem como prioridade identificar **riscos e apoiar decisões possíveis de serem realizadas**, não apenas apresentar números.
 
 ---
 
-## Problema de Negócio
+# Problema de Negócio
 
-Em um cenário de empresa multinacional, a gestão precisa responder perguntas como:
+A empresa apresenta um aumento constante em vendas e presença internacional, mas existem dúvidas estratégicas sobre a sustentabilidade desse crescimento.
 
-### Desempenho Financeiro
+A gestão precisa entender:
+
+- Se o aumento nas vendas está sendo acompanhado por aumento proporcional no lucro.
+- Se algumas operações estão consumindo margem silenciosa.
+- Se políticas comerciais, como descontos, estão impactando negativamente a rentabilidade.
+- Quais produtos e mercados sustentam o resultado financeiro
+
+Sem essa visibilidade, o crescimento pode ocorrer com perda gradual de eficiência.
+
+---
+
+# Principais Perguntas Respondidas
+
+## Desempenho Financeiro
+
+### Perguntas
+
 - O negócio é lucrativo?
-- O crescimento de vendas acompanha o crescimento do lucro?
-- As margens permanecem saudáveis ao longo do tempo?
+- O crescimento das vendas acompanha o crescimento do lucro?
+- A margem permanece estável ao longo do tempo?
 
-### Performance por País
-- Quais países geram mais lucro?
-- Onde há alto volume de vendas, mas baixa eficiência?
-- Quais mercados são mais estratégicos financeiramente?
+### Indicadores Observados
 
-### Produtos
-- Quais produtos concentram vendas e lucro?
+- Faturamento Total: **118,73 Mi**
+- Lucro Líquido Total: **16,89 Mi**
+- Margem média consolidada: **14,23%**
+- Crescimento consistente de vendas e lucro ao longo do período
+
+![Dashboard - Visão Executiva](/screenshots/executiva_financeira.png)
+
+### Interpretação Executiva
+
+**Achado**  
+O negócio apresenta um crescimento constante em vendas e lucro, mantendo margem média segura próxima de 14%.
+
+**Impacto**  
+O crescimento atual indica operação financeira estável no curto prazo.
+
+**Risco**  
+Sem acompanhamento contínuo da margem ao longo do tempo, o crescimento pode ocorrer com redução gradual da rentabilidade.
+
+**Recomendação**  
+Monitorar a evolução mensal da margem e definir metas mínimas de rentabilidade para garantir o crescimento sustentável.
+
+---
+
+## Desempenho por país
+
+### Perguntas
+
+- Quais países geram mais retorno financeiro?
+- Onde há alto volume e baixa eficiência?
+- Quais mercados devem ser priorizados?
+
+### Indicadores Observados
+
+- **França** e **Alemanha** apresentam margens superiores a **15%**
+- **Estado Unidos** possui **alto volume de venda** com **eficiência inferior à média**
+- México apresenta menor geração proporcional de lucro
+
+![Dashboard - Desempenho por País](/screenshots/performance_paises.png)
+
+### Interpretação Executiva
+
+**Achado**  
+Existem mercados com alto volume de vendas, mas eficiência inferior à média geral.
+
+**Impacto**  
+Recursos comerciais podem estar sendo direcionados para regiões com menor retorno financeiro.
+
+**Risco**  
+Manter investimentos em mercados pouco eficientes pode reduzir a rentabilidade total do negócio.
+
+**Recomendação**  
+Priorizar investimentos em mercados com maior margem e revisar estratégias comerciais nos países com menor eficiência.
+
+---
+
+## Desempenho por Produto
+
+### Perguntas
+
+- Quais produtos geram mais lucro?
 - Existem produtos com margens abaixo da média?
-- Onde o custo impacta diretamente a rentabilidade?
+- Onde o custo impacta diretamente no resultado?
 
-### Descontos
-- Descontos aumentam vendas, lucro ou apenas volume?
-- Quais faixas de desconto são sustentáveis?
-- Onde a margem está sendo corroída?
+### Indicadores Observados
 
-### Eficiência Operacional
-- Qual a relação entre os custos de mercadoria e as vendas?
-- Quais produtos operam com maior eficiência?
-- Onde existem oportunidades de otimização de custos?
+- O produto **Paseo** apresenta maior lucro absoluto (aproximadamente 4,8 Mi)
+- O produto **Amarilla** apresenta maior margem de lucro (aproximadamente 15,86%)
+- O produto **Velo** apresenta custo operacional elevado (cerca de 87% da receita)
 
----
+![Dashboard - Desempenho por Produto](/screenshots/analise_produtos.png)
+### Interpretação Executiva
 
-## Etapas do Projeto
+**Achado**  
+Existe uma variação significante entre os produtos.
 
-### Preparação e Qualidade dos Dados (Python)
+**Impacto**  
+Produtos com custo elevado reduzem a margem total e aumenta o risco financeiro.
 
-Os dados foram tratados para garantir **consistência, padronização e confiabilidade**, sem aplicação de regras de negócio.
+**Risco**  
+Produtos com custo alto podem se tornar inviáveis financeiramente caso ocorra variações operacionais.
 
-Principais ações:
-- Padronização de colunas (`snake_case`)
-- Conversão correta de tipos de dados
-- Tratamento de categorias
-- Remoção de inconsistências
-- Preservação dos valores financeiros originais
-
-Nenhuma métrica financeira é calculada nesta etapa.
+**Recomendação**  
+Revisar estrutura de custo e política de preço para produtos com maior impacto negativo na margem.
 
 ---
 
-### SQL Server — Camada Analítica e Regras de Negócio
+# Prioridades Imediatas
+# Arquitetura do Projeto
+# Principais Indicadores Monitorados
+# Impacto do Projeto
+# Tecnologias Utilizadas
+# Possíveis Evoluções
 
-O **SQL Server atua como fonte oficial da verdade**, simulando um ambiente corporativo de BI.
-
-Nesta camada:
-- Métricas financeiras são recalculadas
-- Regras de negócio são aplicadas explicitamente
-- Análises são documentadas e reutilizáveis
-- Dados ficam prontos para consumo em BI
-
-Principais análises:
-- Vendas, lucro, custos e margens
-- Análises temporais (YoY)
-- Rankings por país e produto
-- Impacto de descontos
-- Eficiência operacional
-  
----
-
-### Business Intelligence — Dashboard Analítico (Power BI)
-
-Os dados consolidados são consumidos no **Power BI**, com foco em **análise visual, storytelling e apoio à decisão**.
-
-O modelo segue **modelagem dimensional (Star Schema)**, incluindo:
-- Fato financeira
-- Dimensão calendário
-- Dimensões de produto, país e desconto
-
-## Estrutura do Dashboard
-
-O dashboard é dividido em **5 visões analíticas**:
-
-### Visão Executiva
-- **Indicadores Principais (KPIs):** 
-  - Faturamento Total,
-  - Lucro Líquido,
-  - Eficiência (Margem %),
-  - Crescimento do Lucro
-  - Crescimento de Vendas
-- **Análises disponíveis:**  
-  - Evolução mensal do faturamento comparado ao lucro e indicadores de expansão.
-- **Objetivo:**
-  - Monitorar se a empresa está crescendo com saúde financeira e rentabilidade.
-- **Insight-chave:** 
-  - A operação demonstra uma expansão agressiva, conseguindo manter a margem de lucro estável, o que prova que o crescimento é sustentável.
-
-![Dashboard – Visão Executiva](screenshots/executiva_financeira.png)
-
----
-
-### Desempenho por País
-- **Indicadores Principais (KPIs):** 
-  - Ranking de Lucratividade,
-  - Volume de Vendas por Região
-  - Eficiência por País.
-- **Análises disponíveis:** 
-  - Comparação direta entre volume vendido e lucro real gerado por cada mercado (Gráfico de Dispersão).
-- **Objetivo:**
-  - Identificar quais países trazem o melhor retorno financeiro para priorizar investimentos.
-- **Insight-chave:**
-  - França e Alemanha lideram em eficiência (margem superior a 15,5%), apesar dos EUA apresentarem o maior volume bruto de faturamento.
-
-![Dashboard – Desempenho por País](screenshots/performance_paises.png)
-
----
-
-### Análise por Produto
-- **Indicadores Principais (KPIs):** 
-  - Lucro por Produto,
-  - Margem de Contribuição por Item
-  - Volume de Vendas.
-- **Análises disponíveis:**
-  - Comparativo entre os produtos que mais geram caixa versus os que são mais rentáveis.
-- **Objetivo:**
-  - Apoiar decisões sobre o mix de produtos e campanhas de vendas focadas em rentabilidade.
-- **Insight-chave:**
-  - O produto **Paseo** é o maior gerador de lucro absoluto **$ 4,8 Mi**, enquanto o **Amarilla** entrega a maior margem individual do portfólio **15,86%**.
-
-![Dashboard – Análise por Produto](screenshots/analise_produtos.png)
-
----
-
-### Impacto dos Descontos
-- **Indicadores Principais (KPIs):** 
-  - Faturamento
-  - Lucro por Nível de Desconto, Margem Real após Promoções.
-- **Análises disponíveis:** 
-  - Avaliação do impacto real das políticas de desconto na rentabilidade final.
-- **Objetivo:** 
-  - Ajustar a estratégia comercial para evitar perdas de lucro desnecessárias em campanhas agressivas.
-- **Insight-chave:** 
-  - Descontos de nível "Alto" reduzem a margem para menos de 10%. O patamar "Médio" mantém o volume com uma rentabilidade aceitável de 14,39%.
-
-![Dashboard – Impacto dos Descontos](screenshots/impacto_descontos.png)
-
----
-
-### Eficiência Operacional
-- **Indicadores Principais (KPIs):**
-  - Custo Total de Mercadorias,
-  - Percentual de Custo sobre a Venda
-  - Rentabilidade Operacional.
-- **Análises disponíveis:**
-  - Relação direta entre o faturamento e os custos operacionais por produto.
-- **Objetivo:**
-  - Identificar oportunidades de otimização de custos para proteger a margem de lucro.
-- **Insight-chave:**
-  - O custo médio operacional consome 85,77% do faturamento. O produto **Velo** apresenta o maior desafio, com custo sobre venda de 87,36%.
-
-![Dashboard – Eficiência Operacional](screenshots/eficiencia_operacional.png)
-
----
-
-### Download dos arquivos
-
-Clique no link abaixo para fazer o download do relatório do projeto. Para visualização do dashboard requer ter o Power BI Desktop instalado no computador. 
-
-[*Diretório dos arquivos*](https://drive.google.com/drive/folders/1yrT8Tif19CZaPK5DmSQ0ss7H2HBnrKlO?usp=sharing)
-
-Conteúdo:
-- `Financial.pbix` - Arquivo Dashboard desenvolvido no Power BI
-
----
-
-## Impacto no Negócio
-
-Este projeto permite:
-- Avaliar a saúde financeira do negócio
-- Identificar mercados e produtos mais eficientes
-- Apoiar decisões de precificação e desconto
-- Otimizar custos e margens
-- Sustentar decisões estratégicas com dados confiáveis
-
----
-
-## Tecnologias Utilizadas
-
-| Tecnologia | Finalidade |
-|----------|-----------|
-| Python | Preparação de dados |
-| Pandas | Manipulação |
-| SQL Server | Camada analítica e regras de negócio |
-| Power BI | Visualização e storytelling |
-| Git & GitHub | Versionamento |
-| Excel | Fonte de dados |
-
----
-
-## Autor
-
+# Autor
 **Hector Oliveira**  
-Analista de Dados Júnior  
-[LinkedIn](https://www.linkedin.com/in/hectoroliveira-tech/)
+Analista de Dados
+
+Contado:  
+📧 hectorabreu.oliveira@gmail.com  
+🔗 [LinkedIn](www.linkedin.com/in/hectoroliveira-tech)
