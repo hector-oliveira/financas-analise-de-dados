@@ -40,6 +40,40 @@ Sem essa visibilidade, o crescimento pode ocorrer com perda gradual de eficiênc
 ---
 
 # Principais Perguntas Respondidas
+
+## Desempenho Financeiro
+
+### Perguntas
+
+- O negócio é lucrativo?
+- O crescimento das vendas acompanha o crescimento do lucro?
+- A margem permanece estável ao longo do tempo?
+
+### Indicadores Observados
+
+- Faturamento Total: **118,73 Mi**
+- Lucro Líquido Total: **16,89 Mi**
+- Margem média consolidada: **14,23%**
+- Crescimento consistente de vendas e lucro ao longo do período
+
+![Dashboard - Visão Executiva](/screenshots/executiva_financeira.png)
+
+### Interpretação Executiva
+
+**Achado**  
+O negócio apresenta um crescimento constante em vendas e lucro, mantendo margem média segura próxima de 14%.
+
+**Impacto**  
+O crescimento atual indica operação financeira estável no curto prazo.
+
+**Risco**  
+Sem acompanhamento contínuo da margem ao longo do tempo, o crescimento pode ocorrer com redução gradual da rentabilidade.
+
+**Recomendação**  
+Monitorar a evolução mensal da margem e definir metas mínimas de rentabilidade para garantir o crescimento sustentável.
+
+---
+
 # Prioridades Imediatas
 # Arquitetura do Projeto
 # Principais Indicadores Monitorados
