@@ -168,6 +168,38 @@ Limitar descontos elevados, passando a utilizar mais descontos médios, baixos o
 
 --- 
 
+## Eficiência Operacional
+
+### Perguntas
+
+- Qual a relação entre custo e receita?
+- Quais produtos operam com maior eficiência?
+- Onde existem oportunidades de melhoria?
+
+### Indicadores Operacionais
+
+- Custos operacionais consomem cerca de **85,77%** da receita total.
+- Alguns produtos operam próximo ao limite mínimo de rentabilidade.
+- Pequenas variações de custo impactam diretamente o lucro final.
+
+![Dashboard - Eficiência Operacional](/screenshots/eficiencia_operacional.png)
+
+### Interpretação Executiva
+
+**Achado**  
+O nível geral é bem elevado e impacta diretamente a margem do negócio.
+
+**Impacto**  
+A rentabilidade torna-se altamente dependente da estabilidade dos custos operacionais.
+
+**Risco**  
+Aumento de custos pode reduzir rapidamente o lucro, mesmo com crescimento de vendas.
+
+**Recomendação**  
+Priorizar iniciativas de redução de custo e monitorar produtos com maior percentual de custo sobre venda.
+
+---
+
 # Prioridades Imediatas
 # Arquitetura do Projeto
 # Principais Indicadores Monitorados
