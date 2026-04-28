@@ -214,6 +214,18 @@ Com base nas análises realizadas, as seguintes ações apresentam maior potenci
 
 ---
 
+# Principais Indicadores Monitorados
+
+| Indicador             | Descrição                  |
+| --------------------- | -------------------------- |
+| Faturamento Total     | Receita consolidada        |
+| Lucro Líquido         | Resultado financeiro final |
+| Margem (%)            | Eficiência operacional     |
+| Crescimento (%)       | Evolução do desempenho     |
+| Custo sobre Venda (%) | Impacto operacional        |
+
+---
+
 # Arquitetura Técnica do Projeto
 
 O projeto segue uma separação clara de responsabilidades entre ferramentas, simulando um fluxo comum em ambientes corporativos.
@@ -293,17 +305,7 @@ Cada visão responde perguntas específicas do negócio.
 
 ---
 
-# Principais Indicadores Monitorados
 
-| Indicador             | Descrição                  |
-| --------------------- | -------------------------- |
-| Faturamento Total     | Receita consolidada        |
-| Lucro Líquido         | Resultado financeiro final |
-| Margem (%)            | Eficiência operacional     |
-| Crescimento (%)       | Evolução do desempenho     |
-| Custo sobre Venda (%) | Impacto operacional        |
-
----
 
 # Impacto do Projeto
 
