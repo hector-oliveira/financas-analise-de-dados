@@ -214,11 +214,137 @@ Com base nas análises realizadas, as seguintes ações apresentam maior potenci
 
 ---
 
-# Arquitetura do Projeto
+# Arquitetura Técnica do Projeto
+
+O projeto segue uma separação clara de responsabilidades entre ferramentas, simulando um fluxo comum em ambientes corporativos.
+
+---
+
+## Python — Preparação dos Dados
+
+Responsável pela consistência estrutural dos dados.
+
+Principais atividades:
+
+- Padronização de colunas
+- Conversão de tipos de dados
+- Limpeza de inconsistências
+- Organização do dataset bruto
+
+Nenhuma métrica financeira foi calculada nesta etapa.
+
+---
+
+## SQL Server — Camada Analítica
+
+Responsável pela consolidação das métricas financeiras.
+
+Principais atividades:
+
+- Cálculo de vendas, custos e lucro
+- Aplicação de regras de negócio
+- Consolidação de métricas
+- Criação de consultas reutilizáveis
+
+Essa abordagem garante consistência entre análises e relatórios.
+
+---
+
+## Modelagem Dimensional
+
+O modelo segue padrão **Star Schema**, amplamente utilizado em Business Intelligence.
+
+### Tabela Fato
+
+Responsável pelos eventos financeiros principais:
+
+- Vendas
+- Custos
+- Lucro
+
+---
+
+### Dimensões
+
+Utilizadas para segmentação analítica:
+
+- Produto
+- País
+- Data
+- Nível de Desconto
+
+Essa estrutura permite análises rápidas e escaláveis.
+
+---
+
+## Power BI — Camada de Visualização
+
+Responsável pela comunicação dos resultados.
+
+O dashboard foi dividido em cinco visões principais:
+
+1. Visão Executiva
+2. Desempenho por País
+3. Análise por Produto
+4. Impacto dos Descontos
+5. Eficiência Operacional
+
+Cada visão responde perguntas específicas do negócio.
+
+---
+
 # Principais Indicadores Monitorados
+
+| Indicador             | Descrição                  |
+| --------------------- | -------------------------- |
+| Faturamento Total     | Receita consolidada        |
+| Lucro Líquido         | Resultado financeiro final |
+| Margem (%)            | Eficiência operacional     |
+| Crescimento (%)       | Evolução do desempenho     |
+| Custo sobre Venda (%) | Impacto operacional        |
+
+---
+
 # Impacto do Projeto
+
+Este projeto demonstra como dados podem apoiar decisões estratégicas relacionadas a:
+
+- Sustentabilidade financeira
+- Controle de custos
+- Estratégias comerciais
+- Gestão de descontos
+- Expansão internacional
+
+O foco principal é identificar **onde agir primeiro** para proteger a rentabilidade.
+
+---
+
 # Tecnologias Utilizadas
-# Possíveis Evoluções
+
+| Tecnologia | Finalidade                    |
+| ---------- | ----------------------------- |
+| Python     | Limpeza e preparação de dados |
+| Pandas     | Manipulação de dados          |
+| SQL Server | Camada analítica              |
+| Power BI   | Visualização e análise        |
+| Git        | Versionamento                 |
+| Excel      | Fonte inicial                 |
+
+---
+
+# Possíveis Evoluções Futuras
+
+Este projeto pode ser expandido com novas análises:
+
+- Simulação de cenários financeiros
+- Previsão de vendas
+- Projeção de margem
+- Análise de sensibilidade a custos
+- Segmentação por cliente
+
+Essas evoluções aumentariam a capacidade de previsão e suporte à decisão.
+
+---
 
 # Autor
 **Hector Oliveira**  
