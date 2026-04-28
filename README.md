@@ -352,4 +352,4 @@ Analista de Dados
 
 Contado:  
 📧 hectorabreu.oliveira@gmail.com  
-🔗 [LinkedIn](www.linkedin.com/in/hectoroliveira-tech)
+🔗 [LinkedIn](https://www.linkedin.com/in/hectoroliveira-tech/)
